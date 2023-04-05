@@ -1,0 +1,56 @@
+/*
+this controls some of the style on the about page 
+i made the main section 100% of the page so i can place my about container 
+in the center of my screen 
+
+
+*/
+
+
+body{
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Russo One', sans-serif;
+}
+main{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.about-container{
+    background-color: purple;
+    opacity: .7;
+    margin: 0 auto;
+    padding: 50px 20px ;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 50px;
+    overflow-y: scroll;
+    line-height: 1.5;
+    border: 4px solid grey;
+    border-radius: 3px;
+}
+.about-container p{
+    letter-spacing: 1.5px;
+    font-size: 3vh;
+    white-space: pre-wrap;
+    opacity: 1;
+    color: grey;
+}
+
+
+h2{
+    color: white;
+    border-bottom: 2px solid grey;
+    opacity: 1;
+}
+.bottom h2{
+    border-bottom: 0;
+}
+
+@media screen and (max-width:844px){
+    .about-container{
+        width: 80%;
+    }
+
+}

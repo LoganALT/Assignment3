@@ -1,0 +1,34 @@
+.ufo{
+    background-image: url(/Images/ufo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: flying 30s linear infinite;
+}
+
+@keyframes flying{
+   0%{transform: translate(0,0);}
+   25%{transform: translate(calc(100vw - 200px),calc(100vh - 200px));}
+   50%{transform: translate(calc(100vw - 200px),0);}
+   75%{transform: translate(0,calc(100vh - 200px));}
+   100%{transform: translate(0,0);}
+
+}
+
+/*
+this controlls my ufo svg that moves around the page 
+1. start in top left 
+2. move to bottom right
+3. move to top right 
+4. move to bottom left 
+5. back to starting position 
+
+
+i have also made take 100vh and have it subtrackt 200px so it doesnt go off the screen.
+*/ 

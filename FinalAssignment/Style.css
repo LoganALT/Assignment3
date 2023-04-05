@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(/Images/IMG_0002.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.Logo{
+    width: 10%;
+    height: 15vw;
+    background-image: url(/Images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    max-width: 100px;
+    max-height: 120px;
+}
+
+h1{
+    font-size: 5vw;
+    background:linear-gradient(to right, grey,purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgb 2s ease infinite;
+    background-size: 200%;
+    position:absolute;
+    float: right;
+    top: 30%;
+    right: 5%;
+}
+@keyframes rgb{
+    0% {
+        background-position: 100% 0%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+
+.nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav{
+    position: relative;
+    background-color: transparent;
+    float: right;
+    padding: 20px;
+    transition: .5s;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 9999;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.nav input:checked ~ .menu{
+    width: 450px;
+}
+.menu li{
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.menu li a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s;
+}
+.menu li a:hover{
+    color: purple;
+    
+}
+.nav input{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+.nav span{
+    
+    top: 30%;
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: grey;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.nav input:checked ~ span{
+    background-color: purple;
+}
+.nav span:nth-child(2){
+    transform: translateY(-8px);
+}
+.nav input:checked ~ span:nth-child(2){
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3){
+    transform: translateY(8px);
+}
+.nav input:checked ~ span:nth-child(3){
+    transform: translateY(0) rotate(45deg);
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.bottom h2{
+    color: grey;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .menu{display: flex; flex-direction: column;}
+    .menu li{
+        margin: 10px 0;
+    }
+}

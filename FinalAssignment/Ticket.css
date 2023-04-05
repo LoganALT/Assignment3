@@ -1,0 +1,102 @@
+
+
+.planet-container{
+ position: absolute;
+ top: 10%;
+ left: 0;
+ width: 80%;
+ height: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#moon,#venus,#jupiter,#pluto,#neptune,#mars{
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: absolute;
+}
+
+#moon{
+    top: 10%;
+    left: 20%;
+}
+#venus{
+    top: 30%;
+    left: 80%;
+}
+#jupiter{
+    top: 40%;
+    left: 70%;
+}
+#jupiter{
+    top: 40%;
+    left: 20%;
+}
+#pluto{
+    top: 60%;
+    left: 70%;
+}
+#neptune{
+    top: 80%;
+    left: 30%;
+}
+#mars{
+    bottom: 50%;
+    left: 50%;
+}
+
+#mars:hover{
+    bottom: 50%;
+    left: 50%;
+    content: url(/planets/mars2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+#venus:hover{
+    top: 30%;
+    left: 80%;
+    content: url(/planets/venus2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+#jupiter:hover{
+    top: 40%;
+    left: 20%;
+    content: url(/planets/jupiter2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+#neptune:hover{
+    top: 80%;
+    left: 30%;
+    content: url(/planets/neptune2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+#moon:hover{
+    top: 10%;
+    left: 20%;
+    content: url(/planets/moon2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+#pluto:hover{
+    top: 60%;
+    left: 70%;
+    content: url(/planets/pluto2.png);
+    transform: scale(2) rotate(-89deg);
+    z-index: 9999;
+}
+
+.Price{
+    font-family: 'Russo One', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 9999;
+    color: white;
+}
+
+

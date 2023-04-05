@@ -1,0 +1,65 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+
+    animation-name: slideInRight;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+}
+@keyframes slideInRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact label{
+    color: white;
+    margin-bottom: 15px;
+}
+.contact input,
+.contact textarea{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.contact button[type="submit"]{
+    background-color: grey;
+    opacity: .7;
+    color: purple;
+    font-size: larger;
+    transition: all .2s ease-in-out;
+    padding: 10px 20px;
+    border: 4px  grey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact button[type="submit"]:hover{
+    background-color: purple;
+    color: black;
+    transform: scale(1.2);
+    border: 4px solid grey;
+}
+.input{
+    color: white;
+    background-color: purple;
+    opacity: .7;
+    font-size: 15px;
+    border: 20px solid grey;
+}
